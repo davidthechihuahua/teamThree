@@ -22,5 +22,5 @@ static_files: \1
 upload: .+\.(gif|png|jpg)$
 application_readable: true
 
-- url: /assets/images
-static_dir: assets/images
+- url: /Images_2
+static_dir: /Images_2
