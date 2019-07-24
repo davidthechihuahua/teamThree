@@ -4,6 +4,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
     <link rel="stylesheet" type="text/css" href="../styles/styles.css"> <!-- imports styles.css stylesheet -->
     <title>Jazz Hub</title>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBTd3agC35buxIgvXbh14LbsA6Jjsh7_FQ",
+    authDomain: "jazz-hub.firebaseapp.com",
+    databaseURL: "https://jazz-hub.firebaseio.com",
+    projectId: "jazz-hub",
+    storageBucket: "",
+    messagingSenderId: "845442670928",
+    appId: "1:845442670928:web:5bafc7d8edad62a8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   </head>
   <body>
 <!-- LOG IN BUTTON -->
