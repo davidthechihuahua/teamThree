@@ -29,11 +29,17 @@ class ExploreHandler(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/about.html')
         self.response.write(about_template.render())
 
+class VenuesHandler(webapp2.RequestHandler):
+    def get(self):
+        about_template = the_jinja_env.get_template('templates/venues.html')
+        self.response.write(about_template.render())
+
 # the routes / app configuration section
 app = webapp2.WSGIApplication([
   ('/', HomeHandler),
   ('/results', ResultsHandler),
-  ('/explore',ExploreHandler)
+  ('/explore',ExploreHandler),
+  ('/venues', VenuesHandler)
   ], debug=True)
 
 

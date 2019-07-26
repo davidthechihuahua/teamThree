@@ -1,3 +1,35 @@
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+
 h1 {
   font-style: italic;
   color: #5d6960;
@@ -26,30 +58,6 @@ body {
 
 }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #fff;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #fff;
-  color: white;
-}
 
 
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -178,4 +186,37 @@ span.psw {
   color: white;
   padding-left:20px
   padding-right:20px;
+  margin-left:100px;
+  margin-right:100px;
+  font-family: engebrechtre;
 }
+
+#history1{
+  text-align: center;
+}
+
+#title{
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+  margin-top: 60px
+}
+
+#big-band1{
+height:100px;
+width:100px;
+}
+#big-band{
+padding-left: 350px;
+padding-bottom:150;
+}
+ #maps{
+   margin:120px;
+   margin-bottom: 80px;
+ }
+
+ #heading{
+   font-size: 60px;
+   color: white;
+   text-align: center;
+ }

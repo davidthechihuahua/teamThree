@@ -3,6 +3,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /Images_2
+  static_dir: Images_2
+
 - url: /styles
   static_dir: styles
 
@@ -15,12 +18,3 @@ handlers:
 libraries:
 - name: jinja2
   version: latest
-
-  # Serve images as static resources.
-- url: /(.+\.(gif|png|jpg))$
-static_files: \1
-upload: .+\.(gif|png|jpg)$
-application_readable: true
-
-- url: /Images_2
-static_dir: /Images_2
